@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Summit</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="dashboard">
+
+<!-- ---------------start header------------- -->
+<header class="header">
+	<div class="container-fluid">
+		<div class="logo">
+			<a href="index.html">
+				<img src="img/logo2.svg" alt="">
+			</a>
+		</div>
+		<div class="header__right">
+			 <div class="header__language">
+                        <div class="header__wrapper">
+                                <div id="lang__dropdown" class=".lang__dropdown"></div>
+                            </div>
+               </div>
+               <div class="user-dropdown">
+               	<div class="user-dropdown__name">
+               		<div class="user-dropdown__first-name">
+               			Sierra 
+               		</div>
+               		<div class="user-dropdown__last-name">
+               			Ferguson
+               		</div>
+               	</div>
+               	<div class="user-dropdown__photo">
+               		<img src="img/photo.jpg" alt="">
+               	</div>
+               	<div class="user-dropdown__btn">
+               		
+               	</div>
+               	<div class="user-dropdown__content">
+               		<a href="">My Account</a>
+               		<a href="">Log Out</a>
+               	</div>
+               </div>
+		</div>
+	</div>
+</header>
+<!-- ---------------------end header----------------- -->
+
+<!-- ---------start dashboard content---------------->
+<div class="dashboard-content">
+	<div class="container-fluid">
+		<div class="tabs">
+							<div class="tab">
+								<img src="img/dashboard.svg" alt="">
+
+							Dashboard</div>
+							<div class="tab">
+								<img src="img/user.svg" alt="">
+							Users</div>
+						</div>
+	
+	
+						<div class="tab_content">
+
+<!-- --------------start dashboard item-------------- -->
+<div class="tab_item">
+	<div class="dashboard-tab">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="dashboard-item">
+						<img src="img/dashboard-icon1.svg" alt="">
+						<div class="dasboard-item-content">
+							<h2>
+								Total Users
+							</h2>
+							<div class="progress-bar__value">
+		<span>12/</span>50
+	</div>
+							<div class="progress">
+	
+  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="dashboard-item">
+						<img src="img/dashboard-icon2.svg" alt="">
+						<div class="dasboard-item-content">
+							<h2>
+								Active Rooms
+							</h2>
+							<div class="progress-bar__value">
+		<span>12/</span>50
+	</div>
+							<div class="progress progress--green">
+	
+  <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="dashboard-item">
+						<img src="img/dashboard-icon3.svg" alt="">
+						<div class="dasboard-item-content">
+							<h2>
+								Active Participants
+							</h2>
+								<div class="progress-bar__value">
+		<span>37/</span>100
+	</div>
+							<div class="progress progress--pink">
+	
+  <div class="progress-bar" role="progressbar" style="width: 37%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="dashboard-header user-list-header">
+									<div class="dashboard-header__wrapper">
+										<h1>Start a New Meeting</h1>
+										<div class="dashboard-header__row">
+											
+											<div class="dashboard-header__input-wrapper" >
+												
+  
+<div class="input-group">
+						<input type="text" placeholder="Name the room" id="name-room">
+							<label for="name-room">
+								Name the room
+							</label>								
+						</div>
+   <div class="dropdown show">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Conference
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Conference</a>
+    <a class="dropdown-item" href="#">Webinar</a>
+    <a class="dropdown-item" href="#">Private</a>
+  </div>
+</div>
+
+
+											</div>
+										
+<div class="">
+										<button class="button">
+											<a href=""><img src="img/plus.svg" alt="">Create New Meeting</a>
+										</button></div>
+									</div>
+										<div class="dashboard-header__row hidden dashboard-header__row--hidden">
+											<div class="hidden-row">
+											<div class="dashboard-header__input-wrapper" >
+												
+  
+<div class="input-group">
+						<input type="text" placeholder="Password" id="password">
+							<label for="password">
+								Password
+							</label>								
+						</div>
+    
+<div class="input-group input-group--namber">
+	
+						<input type="number" class="quantity-num" placeholder="0" id="room-size" value="0">
+						<div class="quantity-arrow-plus"> 
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="M9.43858 7.01191L6.56925 3.66435C6.29968 3.34985 5.82621 3.31343 5.51171 3.583C5.48255 3.60799 5.45536 3.63519 5.43036 3.66435L2.56103 7.01191C2.29146 7.3264 2.32788 7.79988 2.64238 8.06944C2.77831 8.18596 2.95144 8.25 3.13047 8.25L8.86914 8.25C9.28335 8.25 9.61914 7.91421 9.61914 7.5C9.61914 7.32097 9.5551 7.14784 9.43858 7.01191Z"/>
+</g>
+</svg>
+ </div>
+						 <div class="quantity-arrow-minus"> <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.56142 4.98809L5.43075 8.33565C5.70032 8.65014 6.17379 8.68657 6.48829 8.417C6.51745 8.39201 6.54464 8.36481 6.56964 8.33565L9.43897 4.98809C9.70854 4.6736 9.67212 4.20012 9.35762 3.93056C9.22169 3.81404 9.04856 3.75 8.86953 3.75H3.13086C2.71665 3.75 2.38086 4.08579 2.38086 4.5C2.38086 4.67903 2.4449 4.85216 2.56142 4.98809Z"/>
+</svg></div>
+							<label for="room-size">
+								Room size
+							</label>								
+						</div>
+
+
+
+											</div>
+						
+						<div class="check-box__wrapper">
+							
+								<input type="checkbox" class="checkbox" id="checkbox" />
+<label for="checkbox" class="checkbox-label"></label>
+<label for="checkbox" class="checkbox-text-label">
+Allow Guests To Join</label>
+</div>				
+
+
+</div>
+									</div>
+										<div class="view-more">
+
+											View <span class="more">More</span> 
+											<span class="less">Less</span> Options
+											<img src="img/more.svg" alt="">
+										</div>
+									</div>
+									
+								</div>
+
+		<div class="dashboard-content-wrapper">
+			<div class="dashboard-content__item">
+				<div class="dashboard-content__item-left">
+					<h3>Lets Chat</h3>
+					<div class="chat-type">
+						<div class="chat-type_btn">
+							<span>Conference</span>
+						</div>
+						<div class="chat-type_icon">
+							<img src="img/guest.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="dashboard-content__item-right">
+					<div class="time">
+						12 minutes ago
+					</div>
+					<div class="author">
+						Created by User
+					</div>
+				</div>
+			</div>
+			<div class="dashboard-content__item">
+				<div class="dashboard-content__item-left">
+					<h3>Training</h3>
+					<div class="chat-type">
+						<div class="chat-type_btn chat-type_btn--pink">
+							<span>Webinar</span>
+						</div>
+						<div class="chat-type_icon">
+							<img src="img/loc.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="dashboard-content__item-right">
+					<div class="time">
+						12 minutes ago
+					</div>
+					<div class="author">
+						Created by User
+					</div>
+				</div>
+			</div>
+			<div class="dashboard-content__item">
+				<div class="dashboard-content__item-left">
+					<h3>Customer Meeting</h3>
+					<div class="chat-type">
+						<div class="chat-type_btn chat-type_btn--green">
+							<span>Private</span>
+						</div>
+						<div class="chat-type_icon">
+							<img src="img/loc.svg" alt="">
+							<img src="img/guest.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="dashboard-content__item-right">
+					<div class="time">
+						12 minutes ago
+					</div>
+					<div class="author">
+						Created by Administrator User
+					</div>
+				</div>
+			</div>
+		</div>						
+		</div>
+	</div>						
+</div>
+<!-- --------------end dashboard item-------------- -->
+							<div class="tab_item">
+								<div class="users-tab">
+								<div class="user-list-header">
+									<div class="user-list-header__left">
+										<div class="title-search-wrapper">
+											<h1>User List</h1>
+											<div class="search-wrapper">
+												<div class="input-group">
+  <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Enter the keyword...">
+  <div class="input-group-append">
+   <div class="dropdown show">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Name
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Name</a>
+    <a class="dropdown-item" href="#">Username</a>
+    <a class="dropdown-item" href="#">Email Address</a>
+  </div>
+</div>
+  </div>
+</div>
+											</div>
+										</div>
+<div class="user-list-header__right">
+										<button class="button">
+											<a href=""><img src="img/plus.svg" alt="">Create New User</a>
+										</button>
+									</div>
+										<div class="user-tabs">
+											<div class="user-tab active">All</div>
+											<div class="user-tab">Administrator</div>
+											<div class="user-tab">Moderator</div>
+											<div class="user-tab">Regular User</div>
+										</div>
+									</div>
+									
+								</div>
+
+<div class="user-tab_item">
+	<div class="user-list">
+		<div class="row user-list__row">
+			<div class="col-md-3 col-3">Name <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-3 col-2">Role <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-3 col-4">Email <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-2 col-2">Created at <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-1 col-1">Actions</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo1.jpg" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Lindsey Stroud
+					</div>
+					<div class="user-info__mail">
+						lindsey.stroud
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Administrator</div>
+			<div class="col-lg-3 col-7">lindsey.stroud@gmail.com</div>
+			<div class="col-lg-2 col-5">03/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo2.jpg" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Nicci Troiani
+					</div>
+					<div class="user-info__mail">
+						nicci.troiani
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Moderator</div>
+			<div class="col-lg-3 col-7">nicci.troiani@gmail.com</div>
+			<div class="col-lg-2 col-5">06/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo3.jpg" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Rebecca Moore
+					</div>
+					<div class="user-info__mail">
+						rebecca.moore
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Administrator</div>
+			<div class="col-lg-3 col-7">rebecca.moore@gmail.com</div>
+			<div class="col-lg-2 col-5">09/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo4.jpg" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Jane Doe
+					</div>
+					<div class="user-info__mail">
+						jane.doe
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Administrator</div>
+			<div class="col-lg-3 col-7">jane.doe@gmail.com</div>
+			<div class="col-lg-2 col-5">14/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo5.jpg" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Jones Dermot
+					</div>
+					<div class="user-info__mail">
+						jones.dermot
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Regular User</div>
+			<div class="col-lg-3 col-7">dermot.jones@gmail.com</div>
+			<div class="col-lg-2 col-5">16/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo6.jpg" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Martin Merces
+					</div>
+					<div class="user-info__mail">
+						martin.merces
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Moderator</div>
+			<div class="col-lg-3 col-7">martin.merces@gmail.com</div>
+			<div class="col-lg-2 col-5">23/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo7.png" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Jane Doe
+					</div>
+					<div class="user-info__mail">
+						jane.doe
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Regular User</div>
+			<div class="col-lg-3 col-7">jane.doe@gmail.com</div>
+			<div class="col-lg-2 col-5">14/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+<div class="user-tab_item">
+	<div class="user-list">
+		<div class="row user-list__row">
+			<div class="col-md-3 col-3">Name <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-3 col-2">Role <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-3 col-4">Email <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-2 col-2">Created at <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-1 col-1">Actions</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo1.jpg" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Lindsey Stroud
+					</div>
+					<div class="user-info__mail">
+						lindsey.stroud
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Administrator</div>
+			<div class="col-lg-3 col-7">lindsey.stroud@gmail.com</div>
+			<div class="col-lg-2 col-5">03/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+
+		
+		
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo3.jpg" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Rebecca Moore
+					</div>
+					<div class="user-info__mail">
+						rebecca.moore
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Administrator</div>
+			<div class="col-lg-3 col-7">rebecca.moore@gmail.com</div>
+			<div class="col-lg-2 col-5">09/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo4.jpg" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Jane Doe
+					</div>
+					<div class="user-info__mail">
+						jane.doe
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Administrator</div>
+			<div class="col-lg-3 col-7">jane.doe@gmail.com</div>
+			<div class="col-lg-2 col-5">14/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+
+		
+
+	</div>
+</div>
+
+<div class="user-tab_item">
+	<div class="user-list">
+		<div class="row user-list__row">
+			<div class="col-md-3 col-3">Name <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-3 col-2">Role <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-3 col-4">Email <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-2 col-2">Created at <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-1 col-1">Actions</div>
+		</div>
+
+		
+
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo2.jpg" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Nicci Troiani
+					</div>
+					<div class="user-info__mail">
+						nicci.troiani
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Moderator</div>
+			<div class="col-lg-3 col-7">nicci.troiani@gmail.com</div>
+			<div class="col-lg-2 col-5">06/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+		
+
+
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo6.jpg" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Martin Merces
+					</div>
+					<div class="user-info__mail">
+						martin.merces
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Moderator</div>
+			<div class="col-lg-3 col-7">martin.merces@gmail.com</div>
+			<div class="col-lg-2 col-5">23/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+
+		
+
+	</div>
+</div>
+
+<div class="user-tab_item">
+	<div class="user-list">
+		<div class="row user-list__row">
+			<div class="col-md-3 col-3">Name <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-3 col-2">Role <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-3 col-4">Email <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-2 col-2">Created at <img src="img/icon.svg" alt=""></div>
+			<div class="col-md-1 col-1">Actions</div>
+		</div>
+
+	
+
+		
+	
+
+	
+
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo5.jpg" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Jones Dermot
+					</div>
+					<div class="user-info__mail">
+						jones.dermot
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Regular User</div>
+			<div class="col-lg-3 col-7">dermot.jones@gmail.com</div>
+			<div class="col-lg-2 col-5">16/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+
+		
+
+		<div class="row">
+			<div class="col-lg-3 col-7">
+				<div class="user-info">
+					<img src="img/photo7.png" alt="">
+					<div class="user-info__text">
+					<div class="user-info__name">
+						Jane Doe
+					</div>
+					<div class="user-info__mail">
+						jane.doe
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-5">Regular User</div>
+			<div class="col-lg-3 col-7">jane.doe@gmail.com</div>
+			<div class="col-lg-2 col-5">14/03/2020</div>
+			<div class="col-lg-1 col-1">
+				<img src="img/delete.svg" alt="" class="delete">
+				<img src="img/delete-hover.svg" alt="" class="delete-hover">
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+									<div class="page-pagination">
+										<a href="" class="prev">
+											<img src="img/prev.svg" alt="">
+										</a>
+										<a href="" class="active">1</a>
+										<a href="">2</a>
+										<a href="">3</a>
+										...
+										<a href="">12</a>
+										<a href="" class="next activ" >
+											<img src="img/next.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+</div>
+
+
+<!---------------end dashboard content------------------>
+
+
+<!-- <div class="dropdown show">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Name
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Name</a>
+    <a class="dropdown-item" href="#">Username</a>
+    <a class="dropdown-item" href="#">Email Address</a>
+  </div>
+</div> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
