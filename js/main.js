@@ -78,6 +78,13 @@ $(function(){
  	$(".user-tab_item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active");
 });
+
+$(function(){
+  $(".chart-tab").click(function() {
+  $(".chart-tab").removeClass("active").eq($(this).index()).addClass("active");
+  $(".chart-tab_item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
+});
 //------------end dashboard tab----------
 
 //-------------start user list delete---------
@@ -94,6 +101,18 @@ $('.view-more').click(function(){
 
 
 //------------end view more-----------
+$('.video__icon-wrapper').click(function(){ 
+    $(this).toggleClass('active');
+     
+  });
+
+$('.video__icon-wrapper--chart').click(function(){ 
+    $('.room-content').toggleClass('active');
+     
+  });
+
+
+
 
 $(function() {
 
